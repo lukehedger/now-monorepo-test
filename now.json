@@ -1,0 +1,24 @@
+{
+  "name": "monotest",
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.go",
+      "use": "@now/go"
+    },
+    {
+      "src": "app/index.html",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api",
+      "dest": "/api"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app/$1"
+    }
+  ]
+}
