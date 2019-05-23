@@ -7,5 +7,5 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	pprint.Print(w, "<h1>Hello from private Go on Now! 🤫</h1>")
+	pprint.Print(w, "<h1>Hello from private Go on Now!</h1>")
 }
